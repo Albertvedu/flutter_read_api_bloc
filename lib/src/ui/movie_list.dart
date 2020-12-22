@@ -23,7 +23,6 @@ class MovieList extends StatelessWidget {
       ),
     );
   }
-
   Widget buildList(AsyncSnapshot<ItemModel> snapshot) {
     return GridView.builder(
         itemCount: snapshot.data.results.length,
